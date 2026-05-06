@@ -45,8 +45,24 @@
     .together{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}.flow{padding:30px}.flow-row{display:flex;gap:12px;align-items:center;margin:14px 0}.flow-badge{min-width:105px;text-align:center;border:1px solid var(--line);border-radius:999px;padding:11px 12px;background:rgba(255,255,255,.04);font-family:var(--mono);font-size:12px}.arrow{color:var(--muted)}
     .before-after{display:grid;grid-template-columns:1fr 1fr;gap:18px}.ba{padding:30px}.ba h3{font-size:26px;letter-spacing:-.04em;margin:0 0 16px}.ba ul{list-style:none;margin:0;padding:0}.ba li{display:flex;gap:10px;color:var(--soft);line-height:1.48;margin:13px 0}.ba .x{color:#ff6c8d}.ba .check{color:#54d89a}.trust-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.trust-card{padding:30px}.stat-line{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.stat{border:1px solid var(--line);border-radius:20px;padding:18px;background:rgba(255,255,255,.035)}.stat b{display:block;font-size:30px;letter-spacing:-.05em}.stat span{display:block;color:var(--muted);font-size:13px;line-height:1.35;margin-top:4px}
     .cta{margin:60px 0 34px;padding:58px;border-radius:36px;border:1px solid var(--line);background:radial-gradient(circle at 82% 18%,rgba(47,111,240,.36),transparent 34%),radial-gradient(circle at 12% 72%,rgba(220,36,76,.27),transparent 34%),var(--panel)}.cta p{max-width:650px;color:var(--muted);font-size:19px;line-height:1.6}.footer{padding:34px 0 70px;color:var(--muted);border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px}
+
+    /* ── App-flow visualization ── */
+    .app-flow-viz{margin-top:32px;padding:28px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.018))}.app-flow-viz .viz-label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}.app-flow-before{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.app-flow-box{font-family:var(--mono);font-size:12px;padding:9px 14px;border:1px solid rgba(220,36,76,.35);border-radius:12px;background:rgba(220,36,76,.07);color:#ff8fa6;white-space:nowrap}.app-flow-after{display:flex;align-items:center;gap:14px;margin-top:20px;flex-wrap:wrap}.app-flow-arrow{color:var(--muted);font-size:22px;font-weight:300}.app-flow-hub{font-family:var(--mono);font-size:13px;font-weight:700;padding:13px 22px;border:1px solid rgba(47,111,240,.5);border-radius:16px;background:radial-gradient(circle,rgba(47,111,240,.22),rgba(133,71,255,.12));color:var(--cyan);box-shadow:0 0 32px rgba(47,111,240,.22);white-space:nowrap}.app-flow-spoke{display:flex;flex-wrap:wrap;gap:8px}.app-flow-sbox{font-family:var(--mono);font-size:11px;padding:7px 11px;border:1px solid rgba(137,169,255,.3);border-radius:10px;background:rgba(137,169,255,.07);color:var(--soft);white-space:nowrap}
+
+    /* ── Package mini process flows ── */
+    .pkg-flow{margin-top:20px;padding:14px 16px;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.03)}.pkg-flow-inner{display:flex;align-items:center;flex-wrap:wrap;gap:6px}.pkg-step{font-family:var(--mono);font-size:11px;padding:6px 11px;border:1px solid rgba(137,169,255,.22);border-radius:8px;background:rgba(137,169,255,.06);color:var(--soft);white-space:nowrap}.pkg-arrow{color:var(--muted2);font-size:13px}
+
+    /* ── Readiness meter ── */
+    .readiness-bar-wrap{margin-top:18px;padding:16px;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.03)}.readiness-bar-label{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:10px;letter-spacing:.06em}.readiness-track{height:10px;background:rgba(255,255,255,.07);border-radius:999px;overflow:hidden}.readiness-fill{height:100%;width:30%;background:linear-gradient(90deg,var(--red),#ff4d72);border-radius:999px;box-shadow:0 0 14px rgba(220,36,76,.5)}.readiness-pct{font-family:var(--mono);font-size:22px;font-weight:700;color:#ff6d8b;margin-top:10px}.readiness-pct small{font-size:13px;color:var(--muted);font-weight:400;margin-left:6px}
+
+    /* ── Automation matrix ── */
+    .auto-matrix{margin-top:18px;padding:14px 16px;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.03)}.auto-matrix-title{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.06em;margin-bottom:10px}.matrix-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.matrix-cell{padding:10px 12px;border-radius:12px;font-size:12px;line-height:1.4}.mc-tl{background:rgba(0,184,115,.1);border:1px solid rgba(0,184,115,.25);color:#54d89a}.mc-tr{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:var(--muted)}.mc-bl{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:var(--muted)}.mc-br{background:rgba(133,71,255,.1);border:1px solid rgba(133,71,255,.25);color:#c4a3ff}.matrix-cell strong{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;margin-bottom:4px;text-transform:uppercase}
+
+    /* ── Productivity chart ── */
+    .productivity-chart{margin-top:18px;padding:14px 16px;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.03)}.chart-title{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.06em;margin-bottom:10px}.chart-wrap{position:relative}.chart-wrap svg{width:100%;height:auto}
+
     @media(max-width:980px){.links{display:none}.hero,.problem,.together{grid-template-columns:1fr}.features,.work-grid,.steps,.packages{grid-template-columns:1fr 1fr}.hero{padding-top:72px}.terminal{order:0}.section-head{display:block}.section-head .lead{margin-top:16px}}
-    @media(max-width:640px){.metric-row,.before-after,.trust-grid,.stat-line{grid-template-columns:1fr}.terminal:before{inset:0}.wrap{width:min(100% - 28px,var(--max))}.nav-inner{height:68px;gap:12px}.brand{font-size:15px}.brand small,.nav-cta .btn:not(.primary){display:none}.nav-cta{min-width:0}.nav-cta .primary{font-size:0;min-height:42px;padding:0 15px;white-space:nowrap}.nav-cta .primary:after{content:"Termin";font-size:13px}.hero h1{font-size:clamp(42px,12.2vw,47px);letter-spacing:-.055em}.hero p{font-size:18px}.hero{gap:34px;padding-bottom:58px}.features,.work-grid,.steps,.packages{grid-template-columns:1fr}.section{padding:66px 0}.problem .panel,.card,.work,.step,.package{padding:22px}.cta{padding:34px 24px}.dash{grid-template-columns:1fr}.screen-body{font-size:12px;padding:18px}.flow-row{align-items:flex-start;flex-direction:column}.arrow{display:none}}
+    @media(max-width:640px){.metric-row,.before-after,.trust-grid,.stat-line{grid-template-columns:1fr}.terminal:before{inset:0}.wrap{width:min(100% - 28px,var(--max))}.nav-inner{height:68px;gap:12px}.brand{font-size:15px}.brand small,.nav-cta .btn:not(.primary){display:none}.nav-cta{min-width:0}.nav-cta .primary{font-size:0;min-height:42px;padding:0 15px;white-space:nowrap}.nav-cta .primary:after{content:"Termin";font-size:13px}.hero h1{font-size:clamp(42px,12.2vw,47px);letter-spacing:-.055em}.hero p{font-size:18px}.hero{gap:34px;padding-bottom:58px}.features,.work-grid,.steps,.packages{grid-template-columns:1fr}.section{padding:66px 0}.problem .panel,.card,.work,.step,.package{padding:22px}.cta{padding:34px 24px}.dash{grid-template-columns:1fr}.screen-body{font-size:12px;padding:18px}.flow-row{align-items:flex-start;flex-direction:column}.arrow{display:none}.app-flow-before,.app-flow-after,.app-flow-spoke{flex-wrap:wrap}.pkg-flow-inner{flex-wrap:wrap}}
   </style>
 </head>
 <body>
@@ -61,12 +77,12 @@
   <main id="main" class="wrap">
     <section class="hero" aria-labelledby="hero-title">
       <div>
-        <div class="eyebrow">Za direktorje in ekipe 5–50 ljudi</div>
-        <h1 id="hero-title"><span class="grad">AI avtopilot</span>, ki prevzame prodajo, administracijo in poročila.</h1>
-        <p>aiOS deluje nad vašimi obstoječimi orodji. Piše, klika, pripravlja ponudbe, pošilja follow-upe in opozori človeka samo pri občutljivih korakih.</p>
-        <div class="icp">Za podjetja, ki izgubljajo ure v <span>CRM-ju, mailih, ponudbah, vsebinah in poročilih</span>.</div>
-        <div class="actions"><a class="btn primary" href="#cta">Rezerviraj 20-min diagnostični klic</a><a class="btn" href="#dela">Kaj lahko prevzame?</a></div>
-        <div class="proof"><span class="pill">15–20h/teden manj administracije</span><span class="pill">30-dnevni implementacijski načrt</span><span class="pill">Človek potrdi občutljive korake</span></div>
+        <div class="eyebrow">AI operativni sistem za podjetja</div>
+        <h1 id="hero-title"><span class="grad">aiOS avtopilot</span> — trajen delovni sloj nad vašim podjetjem.</h1>
+        <p>Eno okolje namesto desetih aplikacij. Avtopilot, ki ne le odgovarja — klika, piše in opravlja delo, ki bi ga sicer naredil človek.</p>
+        <div class="icp">Za direktorje in ekipe 5–50 ljudi, ki izgubljajo ure v <span>CRM-ju, mailih, ponudbah, vsebinah in poročilih</span>.</div>
+        <div class="actions"><a class="btn primary" href="#cta">Rezerviraj diagnostični pregled</a><a class="btn" href="#dela">Kaj lahko prevzame?</a></div>
+        <div class="proof"><span class="pill">Lokalni podatki</span><span class="pill">LLM API obdelava</span><span class="pill">Človek v nadzoru</span><span class="pill">15–20h/teden manj administracije</span></div>
       </div>
       <aside class="terminal" aria-label="Vizualni prikaz aiOS avtopilota">
         <div class="screen">
@@ -90,76 +106,281 @@
     <section id="dela" aria-labelledby="dela-title">
       <div class="section-head"><div><div class="eyebrow">Kaj že dela v slovenskih podjetjih</div><h2 id="dela-title">En avtopilot, več operativnih funkcij.</h2></div><p class="lead">Od prodaje in podpore do vsebin, pogodb in dnevnih poročil direktorju.</p></div>
       <div class="work-grid">
-        <article class="panel work"><h3>Prodaja in stranke</h3><ul><li>Priprava ponudb iz preteklih vzorcev</li><li>Podpora strankam iz lastnega e-maila</li><li>Avtonomne outreach kampanje prek Apolla</li></ul></article>
-        <article class="panel work"><h3>Marketing in vsebine</h3><ul><li>Kreative za družbena omrežja</li><li>Dnevne objave na X, Meta, Instagram, LinkedIn in TikTok</li><li>Izdelava in gostovanje strani v 10 minutah</li></ul></article>
-        <article class="panel work"><h3>Pravo in administracija</h3><ul><li>Priprava pogodb iz preteklih vzorcev</li><li>Pregled spornih mest</li><li>Standardni administrativni odgovori</li></ul></article>
-        <article class="panel work"><h3>Vodstvo in nadzor</h3><ul><li>Dnevna poročila iz CRM in ERP</li><li>Pregledi projektov, nalog, mailov in financ</li><li>Opozorila na zamike in anomalije</li></ul></article>
+        <article class="panel work"><h3>Prodaja in stranke</h3><ul><li>Priprava ponudb na podlagi preteklih vzorcev podjetja</li><li>Podpora strankam iz lastnega e-mail naslova avtopilota</li><li>Popolna avtonomnost v outreach kampanjah prek Apolla, vključno s pisanjem, pošiljanjem in follow-upi</li></ul></article>
+        <article class="panel work"><h3>Marketing in vsebine</h3><ul><li>Izdelava kreativ za družbena omrežja</li><li>Dnevne objave visoke kvalitete na X, Meta, Instagram, LinkedIn in TikTok, ki niso prepoznane kot bot objave</li><li>Izdelava in gostovanje spletnih strani v 10 minutah, primerno za spletne agencije</li></ul></article>
+        <article class="panel work"><h3>Pravo in administracija</h3><ul><li>Priprava pogodb na podlagi preteklih vzorcev pogodb podjetja</li></ul></article>
+        <article class="panel work"><h3>Vodstvo in nadzor</h3><ul><li>Dnevna poročila direktorju iz podatkov CRM in ERP sistema</li><li>Avtomatski pregledi projektov, nalog, mailov, sestankov in financ</li></ul></article>
       </div>
       <div class="panel one"><strong>Vse zgornje opravlja en sam avtopilot.</strong></div>
     </section>
 
-
-
     <section aria-labelledby="before-after-title">
-      <div class="section-head"><div><div class="eyebrow">Before / After</div><h2 id="before-after-title">Manj odpiranja aplikacij. Več zaključenega dela.</h2></div><p class="lead">Največja razlika ni v tem, da imate “AI chat”. Razlika je, da se vsak dan več dela zgodi brez ročnega prepisovanja, iskanja in opominjanja.</p></div>
+      <div class="section-head"><div><div class="eyebrow">Before / After</div><h2 id="before-after-title">Manj odpiranja aplikacij. Več zaključenega dela.</h2></div><p class="lead">Največja razlika ni v tem, da imate "AI chat". Razlika je, da se vsak dan več dela zgodi brez ročnega prepisovanja, iskanja in opominjanja.</p></div>
       <div class="before-after">
         <article class="panel ba"><h3>Pred avtopilotom</h3><ul><li><span class="x">✕</span><span>10 aplikacij, 10 inboxov in nobenega skupnega pregleda.</span></li><li><span class="x">✕</span><span>Follow-upi, ponudbe in CRM zapisi čakajo na človeka.</span></li><li><span class="x">✕</span><span>Direktor izve za zamik šele na sestanku ali v mailu.</span></li></ul></article>
         <article class="panel ba"><h3>Po uvedbi aiOS</h3><ul><li><span class="check">✓</span><span>En pregled nad prodajo, projekti, maili, vsebinami in financami.</span></li><li><span class="check">✓</span><span>Avtopilot pripravi, klikne, pošlje ali prosi za potrditev.</span></li><li><span class="check">✓</span><span>Vodstvo vidi pomembne zamike, priložnosti in odločitve takoj.</span></li></ul></article>
       </div>
     </section>
+
     <section id="problem" aria-labelledby="problem-title">
       <div class="problem">
-        <div class="panel"><div class="eyebrow">Problem, ki ga rešujemo</div><h2 id="problem-title" class="quote">Klasični AI chatboti v prodajnem pogovoru zvenijo dobro. V vsakdanjem poslovanju pa redko prinesejo merljiv učinek.</h2></div>
-        <div class="panel"><p class="lead">Posamezni agenti in deterministične avtomatizacije pogosto razočarajo, ker so odrezani od realnega dela v podjetju. Avtopilot rešuje to drugače: kot <strong>trajen delovni sloj</strong>, ne kot še eno orodje.</p><p class="lead" style="margin-top:18px">Direktor, vodja ekipe ali operativec dela skozi eno okolje namesto skozi deset aplikacij.</p></div>
+        <div class="panel"><div class="eyebrow">Problem, ki ga rešujemo</div><h2 id="problem-title" class="quote">Klasični AI chatboti, posamezni agenti in deterministične avtomatizacije v praksi pogosto razočarajo.</h2></div>
+        <div class="panel"><p class="lead">V prodajnem pogovoru zveni dobro, v vsakdanjem poslovanju pa redko prinesejo merljiv učinek.</p><p class="lead" style="margin-top:18px">Avtopilot rešuje to težavo na drugačen način — kot <strong>trajen delovni sloj</strong>, ne kot orodje.</p></div>
       </div>
     </section>
 
     <section id="razlika" aria-labelledby="razlika-title">
       <div class="section-head"><div><div class="eyebrow">Zakaj smo drugačni</div><h2 id="razlika-title">Ne dodamo nove aplikacije. Zgradimo sloj nad obstoječimi.</h2></div><p class="lead">aiOS avtopilot poveže kanale, interne aplikacije in programe v en delovni prostor, kjer lahko preverjate, analizirate in podajate navodila.</p></div>
       <div class="features">
-        <article class="panel card"><div class="icon">01</div><h3>Eno okolje</h3><p>Namesto spremljanja 10 aplikacij dobite centraliziran sistem za pregled, analizo in upravljanje dela.</p></article>
-        <article class="panel card"><div class="icon">02</div><h3>Trajen delovni sloj</h3><p>Ni enkraten chatbot ali avtomatizacija. Je operativni sloj, ki ostane nad podjetjem in se uči procesov.</p></article>
-        <article class="panel card"><div class="icon">03</div><h3>Varnost</h3><p>Podatki domujejo na vašem strežniku, ki ga priskrbimo mi. Shranjujejo se lokalno, obdelujejo pa anonimno prek API ključa izbranega LLM-ja.</p></article>
-        <article class="panel card"><div class="icon">04</div><h3>Deluje kot človek</h3><p>Največja vrednost ni, da zna odgovarjati. Deluje kot univerzalni API: vse, kar lahko klikne človek, lahko klikne avtopilot.</p></article>
+        <article class="panel card"><div class="icon">01</div><h3>Eno okolje</h3><p>Direktorji sodobnih podjetij ne spremljajo več 10 aplikacij in 10 različnih virov podatkov. Imajo en centraliziran sistem, kjer kadarkoli preverijo, analizirajo in podajajo navodila za upravljanje različnih kanalov, internih aplikacij in programov.</p></article>
+        <article class="panel card"><div class="icon">02</div><h3>Trajen delovni sloj</h3><p>Naš aiOS avtopilot ni enkraten chatbot, agent ali avtomatizacija. Je trajen delovni sloj nad podjetjem, kjer direktor, vodja ekipe ali operativec dela skozi eno okolje namesto skozi deset aplikacij.</p></article>
+        <article class="panel card"><div class="icon">03</div><h3>Varnost</h3><p>Ena izmed najvarnejših uporab umetne inteligence. Podatki, ki se delijo z avtopilotom, domujejo pri vas na strežniku, ki ga priskrbimo mi. Vsi podatki se shranjujejo lokalno, obdelujejo pa anonimno prek API ključa izbranega LLM-ja.</p></article>
+        <article class="panel card"><div class="icon">04</div><h3>Deluje kot človek</h3><p>Največja vrednost ni "avtopilot zna odgovarjati", ampak da deluje kot univerzalni API, ki resnično nadomesti človeka. Vse, kar lahko klikne človek, lahko klikne avtopilot.</p></article>
+      </div>
+
+      <!-- Visualization A: App flow before/after -->
+      <div class="app-flow-viz" aria-label="Vizualizacija: od razdrobljenih orodij do enega sistema">
+        <div class="viz-label">Brez aiOS — 6 ločenih sistemov brez skupnega pregleda</div>
+        <div class="app-flow-before">
+          <span class="app-flow-box">CRM</span>
+          <span class="app-flow-box">Email</span>
+          <span class="app-flow-box">Ponudbe</span>
+          <span class="app-flow-box">Apollo</span>
+          <span class="app-flow-box">Vsebine</span>
+          <span class="app-flow-box">Poročila</span>
+        </div>
+        <div class="app-flow-after">
+          <div>
+            <div class="viz-label" style="margin-bottom:12px">Z aiOS — en centralni hub</div>
+            <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+              <span class="app-flow-hub">aiOS Avtopilot</span>
+              <span class="app-flow-arrow">→</span>
+              <div class="app-flow-spoke">
+                <span class="app-flow-sbox">CRM</span>
+                <span class="app-flow-sbox">Email</span>
+                <span class="app-flow-sbox">Ponudbe</span>
+                <span class="app-flow-sbox">Apollo</span>
+                <span class="app-flow-sbox">Vsebine</span>
+                <span class="app-flow-sbox">Poročila</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section aria-labelledby="priprava-title">
-      <div class="section-head"><div><div class="eyebrow">Kako pripravimo podjetje na avtopilota</div><h2 id="priprava-title">Najprej izberemo delo, kjer AI prinese realen učinek.</h2></div><p class="lead">Ne iščemo magične 100 % avtomatizacije. Iščemo delež procesa, ki ga sistem lahko prevzame varno, merljivo in dovolj hitro.</p></div>
+      <div class="section-head"><div><div class="eyebrow">Kako se pripravim na avtopilota</div><h2 id="priprava-title">Najprej izberemo delo, kjer AI prinese realen učinek.</h2></div><p class="lead">Pred nastavitvijo avtopilota si zastavimo tri vprašanja.</p></div>
       <div class="steps">
-        <article class="panel step"><div class="num">01</div><h3>Kako lahko AI naredi vsaj 30 % tega?</h3><p>Vprašanje ni, ali AI naredi vse. Vprašanje je, kateri del naloge lahko prevzame takoj.</p></article>
-        <article class="panel step"><div class="num">02</div><h3>Kaj je vredno avtomatizirati?</h3><p>Pogosto je boljše avtomatizirati majhen, determinističen kos procesa kot graditi preveč avtonomnega agenta.</p></article>
-        <article class="panel step"><div class="num">03</div><h3>Produktivnost najprej pade, potem zraste.</h3><p>Na začetku pade zaradi učenja in spremembe navad, nato pa se zgodi eksponentna rast, ko se sistem začne obrestovati.</p></article>
+        <article class="panel step">
+          <div class="num">01</div>
+          <h3>"Kako lahko AI naredi vsaj 30 % tega?"</h3>
+          <p>Ne gre za vprašanje, ali AI naredi 100 %, ampak kakšen delež naloge lahko prevzame.</p>
+          <!-- Visualization C1: Readiness bar -->
+          <div class="readiness-bar-wrap">
+            <div class="readiness-bar-label">30% test — cilj ni popolnost, ampak delež</div>
+            <div class="readiness-track"><div class="readiness-fill"></div></div>
+            <div class="readiness-pct">30%<small>dovolj za začetek</small></div>
+          </div>
+        </article>
+        <article class="panel step">
+          <div class="num">02</div>
+          <h3>"Kaj je vredno avtomatizirati in koliko avtonomije potrebuje?"</h3>
+          <p>Pogosto je boljše avtomatizirati majhen, determinističen kos procesa kot graditi preveč avtonomnega agenta.</p>
+          <!-- Visualization C2: 2x2 matrix -->
+          <div class="auto-matrix">
+            <div class="auto-matrix-title">Kje začeti — matrika vrednosti in avtonomije</div>
+            <div class="matrix-grid">
+              <div class="matrix-cell mc-tl"><strong>Začni tukaj ✓</strong>Visoka vrednost · Deterministično</div>
+              <div class="matrix-cell mc-tr"><strong>Previdno</strong>Visoka vrednost · Avtonomno</div>
+              <div class="matrix-cell mc-bl"><strong>Manj nujno</strong>Nizka vrednost · Deterministično</div>
+              <div class="matrix-cell mc-br"><strong>Pozneje</strong>Nizka vrednost · Avtonomno</div>
+            </div>
+          </div>
+        </article>
+        <article class="panel step">
+          <div class="num">03</div>
+          <h3>Produktivnost najprej pade, potem zraste.</h3>
+          <p>Na začetku vedno pade zaradi učenja in spremembe navad, nato pa se zgodi eksponentna rast, ko se sistem začne obrestovati.</p>
+          <!-- Visualization C3: Productivity curve -->
+          <div class="productivity-chart">
+            <div class="chart-title">Krivulja produktivnosti</div>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 280 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Grid lines -->
+                <line x1="0" y1="55" x2="280" y2="55" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+                <line x1="0" y1="20" x2="280" y2="20" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+                <line x1="0" y1="90" x2="280" y2="90" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+                <!-- Curve: starts at 55, dips to ~80, then rises to ~10 -->
+                <path d="M 10 55 C 50 55, 80 75, 110 82 C 140 88, 160 70, 190 45 C 220 22, 250 12, 270 8" stroke="url(#curveGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Gradient fill under curve -->
+                <path d="M 10 55 C 50 55, 80 75, 110 82 C 140 88, 160 70, 190 45 C 220 22, 250 12, 270 8 L 270 100 L 10 100 Z" fill="url(#fillGrad)" opacity="0.3"/>
+                <!-- Labels -->
+                <text x="30" y="100" font-family="monospace" font-size="9" fill="#7f8aa6">Učenje</text>
+                <text x="115" y="100" font-family="monospace" font-size="9" fill="#7f8aa6">Sprememba</text>
+                <text x="115" y="109" font-family="monospace" font-size="9" fill="#7f8aa6">navad</text>
+                <text x="225" y="22" font-family="monospace" font-size="9" fill="#54d89a">Eksponentna</text>
+                <text x="225" y="31" font-family="monospace" font-size="9" fill="#54d89a">rast</text>
+                <!-- Dot at peak dip -->
+                <circle cx="110" cy="82" r="3" fill="#ff6d8b"/>
+                <!-- Dot at end -->
+                <circle cx="270" cy="8" r="3" fill="#54d89a"/>
+                <defs>
+                  <linearGradient id="curveGrad" x1="10" y1="0" x2="270" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#dc244c"/>
+                    <stop offset="55%" stop-color="#8547ff"/>
+                    <stop offset="100%" stop-color="#00b873"/>
+                  </linearGradient>
+                  <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#8547ff" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#080d18" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
     <section id="paketi" aria-labelledby="paketi-title">
       <div class="section-head"><div><div class="eyebrow">Paketi</div><h2 id="paketi-title">Začnemo z diagnostiko. Nato dodamo funkcionalne avtopilote.</h2></div><p class="lead">Vsi paketi tečejo na istem aiOS avtopilotu, zato podatki in znanje med njimi prosto krožijo.</p></div>
       <div class="packages">
-        <article class="panel package featured"><span class="tag">Vstopna točka</span><h3>Diagnostični pregled</h3><div class="sub">Pred vsako implementacijo.</div><p>V dveh tednih popišemo vaše procese, identificiramo, kje avtopilot prinese največ vrednosti, in pripravimo načrt za prvih 30 dni. Brez diagnostike se vsaka AI implementacija začne na napačnem koncu.</p><ul><li>Zemljevid procesov</li><li>Prioriteta avtomatizacij</li><li>30-dnevni implementacijski načrt</li><li>Odločitev: go / no-go</li></ul><div class="result"><span>Rezultat</span>Jasno veste, kateri paket se vam najbolj splača in v kakšnem vrstnem redu.</div></article>
-        <article class="panel package"><span class="tag">Sales</span><h3>Sales Autopilot</h3><div class="sub">Prevzame cikel od prvega kontakta do podpisa pogodbe.</div><ul><li>Pripravlja ponudbe na podlagi vaših vzorcev</li><li>Vodi outreach kampanje prek Apolla</li><li>Odgovarja strankam iz lastnega e-maila</li><li>Posodablja CRM po vsakem kontaktu</li></ul><p><strong>Za koga:</strong> prodajne ekipe 1 do 5 ljudi, kjer prodajalci preveč časa porabijo za administracijo.</p><div class="result"><span>Tipičen rezultat</span>15 do 20 ur tedensko nazaj za delo s kvalificiranimi leadi.</div></article>
-        <article class="panel package"><span class="tag">Content</span><h3>Content Autopilot</h3><div class="sub">Prevzame produkcijo vsebin za družbena omrežja in spletne strani.</div><ul><li>Pripravlja kreative za družbena omrežja</li><li>Dnevno objavlja na petih platformah</li><li>Izdeluje in gosti spletne strani v 10 minutah</li><li>Spremlja performance in optimizira vsebine</li></ul><p><strong>Za koga:</strong> podjetja brez časa ali kadrov za stalno prisotnost in agencije, ki želijo skalirati produkcijo.</p><div class="result"><span>Tipičen rezultat</span>Stalna prisotnost brez najema content kreatorja.</div></article>
-        <article class="panel package"><span class="tag">Legal & Admin</span><h3>Legal & Admin Autopilot</h3><div class="sub">Pripravlja pogodbe, dokumente in administrativne odgovore.</div><ul><li>Pripravlja pogodbe iz preteklih vzorcev</li><li>Pregleduje prejete pogodbe</li><li>Pripravlja standardne odgovore</li><li>Vzdržuje strukturiran arhiv dokumentov</li></ul><p><strong>Za koga:</strong> podjetja z redno dinamiko pogodb, B2B prodaja, agencije, najemodajalci, konzultantske hiše in odvetniške pisarne.</p><div class="result"><span>Tipičen rezultat</span>Priprava nove pogodbe iz 2 ur na 10 minut.</div></article>
-        <article class="panel package"><span class="tag">Executive</span><h3>Executive Autopilot</h3><div class="sub">Operativni nadzor direktorja nad celotnim podjetjem.</div><ul><li>Pripravi dnevno poročilo iz CRM in ERP</li><li>Pregleduje projekte, naloge, maile, sestanke in finance</li><li>Opozori na zamike, anomalije in priložnosti</li><li>Pripravi tedenski izvršni povzetek</li></ul><p><strong>Za koga:</strong> direktorji in lastniki podjetij s 5 do 50 zaposlenimi.</p><div class="result"><span>Tipičen rezultat</span>V 5 minutah zjutraj veste to, za kar ste prej potrebovali tri sestanke.</div></article>
+
+        <article class="panel package featured">
+          <span class="tag">Vstopna točka</span>
+          <h3>Diagnostični pregled</h3>
+          <div class="sub">Vstopni paket. Pred vsako implementacijo.</div>
+          <p>V dveh tednih popišemo vaše procese, identificiramo, kje avtopilot prinese največ vrednosti, in pripravimo načrt za prvih 30 dni. Brez diagnostike se vsaka AI implementacija začne na napačnem koncu. Diagnostika vam pove, kateri paket se vam dejansko najbolj splača in v kakšnem vrstnem redu.</p>
+          <ul>
+            <li>Zemljevid procesov</li>
+            <li>Prioriteta avtomatizacij</li>
+            <li>30-dnevni implementacijski načrt</li>
+            <li>Odločitev: go / no-go</li>
+          </ul>
+          <div class="result"><span>Rezultat</span>Jasno veste, kateri paket se vam dejansko najbolj splača in v kakšnem vrstnem redu.</div>
+        </article>
+
+        <article class="panel package">
+          <span class="tag">Sales</span>
+          <h3>Sales Autopilot</h3>
+          <div class="sub">Avtopilot prevzame celoten cikel od prvega kontakta do podpisa pogodbe.</div>
+          <p><strong>Kaj dela namesto vas:</strong></p>
+          <ul>
+            <li>Pripravlja ponudbe na podlagi vaših preteklih vzorcev</li>
+            <li>Vodi outreach kampanje prek Apolla, popolnoma avtonomno (pisanje, pošiljanje, follow-upi)</li>
+            <li>Odgovarja strankam iz lastnega e-mail naslova</li>
+            <li>Posodablja CRM po vsakem kontaktu</li>
+          </ul>
+          <p><strong>Za koga:</strong> Podjetja s prodajno ekipo 1 do 5 ljudi, kjer prodajalci porabijo več kot polovico časa za administracijo namesto za pogovore s strankami.</p>
+          <!-- Visualization B: Sales flow -->
+          <div class="pkg-flow">
+            <div class="pkg-flow-inner">
+              <span class="pkg-step">Lead</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">Apollo Follow-up</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">Ponudba</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">CRM Update</span>
+            </div>
+          </div>
+          <div class="result"><span>Tipičen rezultat</span>Prodajalec dobi nazaj 15 do 20 ur tedensko za delo s kvalificiranimi leadi. Število ponudb na teden se podvoji.</div>
+        </article>
+
+        <article class="panel package">
+          <span class="tag">Content</span>
+          <h3>Content Autopilot</h3>
+          <div class="sub">Avtopilot prevzame celotno produkcijo vsebin za družbena omrežja in spletne strani.</div>
+          <p><strong>Kaj dela namesto vas:</strong></p>
+          <ul>
+            <li>Pripravlja kreative za družbena omrežja</li>
+            <li>Dnevno objavlja na X, Meta, Instagram, LinkedIn in TikTok, vsebine niso prepoznane kot bot objave</li>
+            <li>Izdeluje in gosti spletne strani v 10 minutah, primerno za spletne agencije</li>
+            <li>Spremlja performance in optimizira na podlagi podatkov</li>
+          </ul>
+          <p><strong>Za koga:</strong> Podjetja, ki vedo, da bi morala biti aktivna na družbenih omrežjih, ampak nimajo časa ali kadrov. Spletne agencije, ki želijo skalirati produkcijo strani brez novih zaposlitev.</p>
+          <!-- Visualization B: Content flow -->
+          <div class="pkg-flow">
+            <div class="pkg-flow-inner">
+              <span class="pkg-step">Brief</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">Kreativa</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">Objava (5× platform)</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">Analytics</span>
+            </div>
+          </div>
+          <div class="result"><span>Tipičen rezultat</span>Stalna prisotnost na petih platformah, brez najema content kreatorja (1.500 do 2.500 EUR mesečno).</div>
+        </article>
+
+        <article class="panel package">
+          <span class="tag">Legal &amp; Admin</span>
+          <h3>Legal &amp; Admin Autopilot</h3>
+          <div class="sub">Avtopilot pripravlja pogodbe, dokumente in administrativne odgovore na podlagi preteklih vzorcev podjetja.</div>
+          <p><strong>Kaj dela namesto vas:</strong></p>
+          <ul>
+            <li>Pripravlja pogodbe na podlagi preteklih vzorcev podjetja</li>
+            <li>Pregleduje prejete pogodbe in označuje sporna mesta</li>
+            <li>Pripravlja standardne administrativne odgovore</li>
+            <li>Vzdržuje strukturiran arhiv vseh pravnih dokumentov</li>
+          </ul>
+          <p><strong>Za koga:</strong> Podjetja z redno dinamiko pogodb (B2B prodaja, agencije, najemodajalci, konzultantske hiše). Odvetniške pisarne, ki želijo skrajšati čas priprave standardnih dokumentov.</p>
+          <!-- Visualization B: Legal flow -->
+          <div class="pkg-flow">
+            <div class="pkg-flow-inner">
+              <span class="pkg-step">Vzorec</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">Osnutek</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">Pregled</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">Arhiv</span>
+            </div>
+          </div>
+          <div class="result"><span>Tipičen rezultat</span>Priprava nove pogodbe iz 2 ur na 10 minut. Manj napak, ker avtopilot ne pozabi klavzul.</div>
+        </article>
+
+        <article class="panel package">
+          <span class="tag">Executive</span>
+          <h3>Executive Autopilot</h3>
+          <div class="sub">Avtopilot postane operativni nadzor direktorja nad celotnim podjetjem.</div>
+          <p><strong>Kaj dela namesto vas:</strong></p>
+          <ul>
+            <li>Pripravi dnevno poročilo iz podatkov CRM in ERP sistema</li>
+            <li>Avtomatsko pregleduje projekte, naloge, maile, sestanke in finance</li>
+            <li>Opozori na zamike, anomalije in priložnosti</li>
+            <li>Pripravi tedenski izvršni povzetek</li>
+          </ul>
+          <p><strong>Za koga:</strong> Direktorji in lastniki podjetij s 5 do 50 zaposlenimi, ki želijo imeti pregled nad vsem, brez da morajo dnevno odpirati 10 sistemov.</p>
+          <!-- Visualization B: Executive flow -->
+          <div class="pkg-flow">
+            <div class="pkg-flow-inner">
+              <span class="pkg-step">CRM + ERP + Mail</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">aiOS</span><span class="pkg-arrow">→</span>
+              <span class="pkg-step">Poročilo direktorju</span>
+            </div>
+          </div>
+          <div class="result"><span>Tipičen rezultat</span>Direktor v 5 minutah zjutraj ve vse, kar je prej vedel po treh sestankih in dveh urah branja maila.</div>
+        </article>
+
       </div>
     </section>
 
     <section aria-labelledby="skupaj-title">
       <div class="together">
-        <div class="panel flow"><div class="eyebrow">Kako paketi delujejo skupaj</div><h2 id="skupaj-title" style="font-size:clamp(34px,4vw,54px);letter-spacing:-.055em;line-height:1.02;margin:0 0 20px">En sistem, več veščin.</h2><p class="lead">Stranka začne z diagnostičnim pregledom. Nato izbere 1 do 2 funkcionalna paketa. Ko ti delujejo, lahko doda nadaljnje pakete ali nadgrajuje obstoječe z novimi veščinami.</p></div>
-        <div class="panel flow" aria-label="Tok paketov"><div class="flow-row"><span class="flow-badge">Diagnostika</span><span class="arrow">→</span><span class="flow-badge">Sales</span><span class="flow-badge">Content</span></div><div class="flow-row"><span class="flow-badge">Legal</span><span class="flow-badge">Executive</span><span class="arrow">→</span><span class="flow-badge">en aiOS</span></div><p class="lead" style="margin-top:24px">Sales avtopilot pozna vsebino, ki jo Content avtopilot objavlja. Executive avtopilot pozna vse, kar se dogaja v ostalih paketih.</p></div>
+        <div class="panel flow"><div class="eyebrow">Kako paketi delujejo skupaj</div><h2 id="skupaj-title" style="font-size:clamp(34px,4vw,54px);letter-spacing:-.055em;line-height:1.02;margin:0 0 20px">En sistem, več veščin.</h2><p class="lead">Stranka začne z diagnostičnim pregledom. Na podlagi rezultatov izbere 1 do 2 funkcionalna paketa (Sales, Content, Legal &amp; Admin ali Executive). Ko ti delujejo, lahko doda nadaljnje pakete ali nadgrajuje obstoječe z novimi veščinami.</p></div>
+        <div class="panel flow" aria-label="Tok paketov"><div class="flow-row"><span class="flow-badge">Diagnostika</span><span class="arrow">→</span><span class="flow-badge">Sales</span><span class="flow-badge">Content</span></div><div class="flow-row"><span class="flow-badge">Legal</span><span class="flow-badge">Executive</span><span class="arrow">→</span><span class="flow-badge">en aiOS</span></div><p class="lead" style="margin-top:24px">Vsi paketi tečejo na istem aiOS avtopilotu — kar pomeni, da podatki in znanje med njimi prosto krožijo. Sales avtopilot pozna vsebino, ki jo Content avtopilot objavlja. Executive avtopilot pozna vse, kar se dogaja v ostalih paketih.</p></div>
       </div>
     </section>
-
 
     <section aria-labelledby="proof-title">
       <div class="trust-grid">
-        <article class="panel trust-card"><div class="eyebrow">Zakaj je to varnejši začetek</div><h2 id="proof-title" style="font-size:clamp(34px,4vw,54px);letter-spacing:-.055em;line-height:1.02;margin:0 0 18px">Najprej diagnostika, potem implementacija.</h2><p class="lead">Ne prodajamo “AI za vse”. V dveh tednih najprej ugotovimo, kateri procesi imajo dovolj vrednosti, dovolj podatkov in dovolj nizek riziko za avtomatizacijo.</p></article>
+        <article class="panel trust-card"><div class="eyebrow">Zakaj je to varnejši začetek</div><h2 id="proof-title" style="font-size:clamp(34px,4vw,54px);letter-spacing:-.055em;line-height:1.02;margin:0 0 18px">Najprej diagnostika, potem implementacija.</h2><p class="lead">Ne prodajamo "AI za vse". V dveh tednih najprej ugotovimo, kateri procesi imajo dovolj vrednosti, dovolj podatkov in dovolj nizek riziko za avtomatizacijo.</p></article>
         <article class="panel trust-card"><div class="eyebrow">Tipični prvi rezultati</div><div class="stat-line"><div class="stat"><b>2 tedna</b><span>za zemljevid procesov</span></div><div class="stat"><b>30 dni</b><span>za prvi izvedbeni načrt</span></div><div class="stat"><b>go / no-go</b><span>jasna odločitev pred investicijo</span></div></div></article>
       </div>
     </section>
+
     <section id="cta" class="cta" aria-labelledby="cta-title">
-      <div class="eyebrow">Začetek sodelovanja</div><h2 id="cta-title">Sodelovanje začnemo s kratkim klicem in aiOS diagnostičnim pregledom.</h2><p>Na klicu preverimo, kje bi avtopilot najhitreje prinesel merljiv učinek in ali je vaše podjetje pravi kandidat za implementacijo.</p><div class="actions"><a class="btn primary" href="mailto:matic@chattrips.si?subject=Rezervacija%20aiOS%20diagnosti%C4%8Dnega%20pregleda">Začni z diagnostiko</a><a class="btn" href="#paketi">Preglej pakete</a></div>
+      <div class="eyebrow">Začetek sodelovanja</div>
+      <h2 id="cta-title">Sodelovanje začnemo s kratkim klicem in aiOS diagnostičnim pregledom.</h2>
+      <p>Na klicu preverimo, kje bi avtopilot najhitreje prinesel merljiv učinek in ali je vaše podjetje pravi kandidat za implementacijo.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:matic@chattrips.si?subject=Rezervacija%20aiOS%20diagnosti%C4%8Dnega%20pregleda">Rezerviraj termin</a>
+        <a class="btn" href="#paketi">Preglej pakete</a>
+      </div>
     </section>
   </main>
   <footer class="wrap footer"><span>ChatTrips d.o.o. · AI avtomatizacije in avtopiloti za podjetja</span><span>www.chattrips.si</span></footer>

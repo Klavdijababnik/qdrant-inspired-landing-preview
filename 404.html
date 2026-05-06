@@ -9,7 +9,7 @@
     :root{
       --bg:#080d18; --bg2:#0b1222; --panel:#141d32; --panel2:#1b2742; --panel3:#101827;
       --line:rgba(143,152,178,.24); --line2:rgba(255,255,255,.10);
-      --text:#ffffff; --soft:#d8deeb; --muted:#8f98b2; --muted2:#65708d;
+      --text:#ffffff; --soft:#d8deeb; --muted:#aeb8cf; --muted2:#7f8aa6;
       --red:#dc244c; --red2:#ff4d72; --blue:#2f6ff0; --cyan:#89a9ff; --violet:#8547ff; --green:#00b873;
       --sans:Inter,"Mona Sans",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
       --mono:"Geist Mono","Overpass Mono",ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
@@ -32,8 +32,10 @@
     .brand small{display:block;color:var(--muted);font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}.links{display:flex;gap:25px;color:var(--soft);font-size:14px}.links a{text-decoration:none;opacity:.86}.links a:hover{opacity:1;color:#fff}.nav-cta{display:flex;gap:10px;align-items:center}
     .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.035);color:#fff;text-decoration:none;font-weight:750;letter-spacing:-.01em;transition:.2s ease}.btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.24);background:rgba(255,255,255,.07)}.btn.primary{background:linear-gradient(135deg,var(--red),#c31940);border-color:rgba(255,255,255,.08);box-shadow:0 20px 70px rgba(220,36,76,.30)}.btn.primary:hover{box-shadow:0 22px 86px rgba(220,36,76,.44)}
     .hero{padding:104px 0 86px;display:grid;grid-template-columns:1.04fr .96fr;gap:58px;align-items:center}.hero>*{min-width:0}.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--cyan);margin-bottom:18px}.hero h1{font-size:clamp(48px,6.8vw,91px);line-height:.96;letter-spacing:-.075em;margin:0 0 26px;max-width:780px;overflow-wrap:normal}.grad{background:linear-gradient(135deg,#fff 16%,#e4e9ff 44%,#8fb0ff 76%,#ff6d8b 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:20px;line-height:1.62;color:var(--muted);max-width:620px;margin:0}.actions{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}.proof{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap;min-width:0}.pill{font-family:var(--mono);font-size:12px;color:var(--soft);padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.035);max-width:100%;overflow-wrap:anywhere}
-    .terminal{position:relative;border:1px solid var(--line);border-radius:34px;padding:20px;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025));box-shadow:0 40px 130px rgba(47,111,240,.22);min-width:0;max-width:100%}.terminal:before{content:"";position:absolute;inset:-90px;z-index:-1;background:radial-gradient(circle,rgba(47,111,240,.24),transparent 60%)}
+    .icp{margin-top:18px;color:#d8deeb;font-weight:650;line-height:1.5}.icp span{color:var(--cyan)}
+    .terminal{position:relative;border:1px solid var(--line);border-radius:34px;padding:20px;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025));box-shadow:0 40px 130px rgba(47,111,240,.22);min-width:0;max-width:100%;overflow:hidden}.terminal:before{content:"";position:absolute;inset:-90px;z-index:-1;background:radial-gradient(circle,rgba(47,111,240,.24),transparent 60%)}
     .screen{border-radius:24px;background:#050916;border:1px solid rgba(255,255,255,.08);overflow:hidden;min-width:0;max-width:100%}.screen-top{height:46px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;gap:8px;padding:0 18px}.dot{width:9px;height:9px;border-radius:50%;background:var(--red)}.dot:nth-child(2){background:var(--blue)}.dot:nth-child(3){background:var(--violet)}.screen-body{padding:22px;font-family:var(--mono);font-size:13px;line-height:1.72;color:#d7deef;overflow-wrap:anywhere}.cmd{color:#89a9ff}.ok{color:#54d89a}.warn{color:#ff6c8d}.mut{color:#687492}.dash{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px;min-width:0}.mini{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.035);border-radius:18px;padding:16px;min-width:0}.mini b{font-size:24px}.mini span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+    .ceo-dashboard{display:grid;gap:12px}.dash-head{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:4px}.dash-title{font-family:var(--sans);font-size:19px;font-weight:850;letter-spacing:-.03em;color:#fff}.dash-date{color:var(--muted);font-size:12px}.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);border-radius:18px;padding:15px}.metric b{display:block;font-family:var(--sans);font-size:25px;color:#fff;letter-spacing:-.04em}.metric span{display:block;color:var(--muted);font-size:11px;margin-top:5px;line-height:1.3}.task{display:flex;align-items:flex-start;gap:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.032);border-radius:18px;padding:14px}.task-dot{width:10px;height:10px;border-radius:50%;margin-top:5px;background:linear-gradient(135deg,var(--red),var(--blue));flex:0 0 auto}.task strong{display:block;font-family:var(--sans);font-size:14px;color:#fff;margin-bottom:4px}.task p{margin:0;color:var(--muted);font-family:var(--sans);font-size:13px;line-height:1.4}.approval{border-color:rgba(220,36,76,.35);background:rgba(220,36,76,.08)}
     section{padding:92px 0}.section-head{display:flex;justify-content:space-between;gap:32px;align-items:end;margin-bottom:36px}.section-head h2,.cta h2{font-size:clamp(36px,4.2vw,62px);letter-spacing:-.06em;line-height:1.02;margin:0}.lead{color:var(--muted);font-size:18px;line-height:1.66;max-width:700px;margin:0}.panel{border:1px solid var(--line);border-radius:34px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.022));box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
     .problem{display:grid;grid-template-columns:.92fr 1.08fr;gap:20px}.problem .panel{padding:34px}.quote{font-size:28px;line-height:1.2;letter-spacing:-.04em}.quote strong{color:#fff}.muted{color:var(--muted)}
     .features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{padding:26px;min-height:260px}.icon{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;margin-bottom:24px;background:rgba(220,36,76,.13);color:#ff7893;font-family:var(--mono);font-weight:800}.card h3{font-size:21px;letter-spacing:-.025em;margin:0 0 12px}.card p{color:var(--muted);line-height:1.58;margin:0}
@@ -41,9 +43,10 @@
     .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:28px}.num{font-family:var(--mono);color:var(--cyan);font-size:13px;margin-bottom:18px}.step h3{font-size:23px;margin:0 0 12px;letter-spacing:-.03em}.step p{color:var(--muted);line-height:1.6;margin:0}
     .packages{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.package{padding:30px;position:relative;overflow:hidden}.package.featured{grid-column:1/-1;background:radial-gradient(circle at 86% 10%,rgba(47,111,240,.22),transparent 32%),linear-gradient(180deg,rgba(255,255,255,.065),rgba(255,255,255,.026))}.tag{display:inline-flex;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(220,36,76,.16);border:1px solid rgba(220,36,76,.32);padding:8px 10px;border-radius:999px;margin-bottom:18px}.package h3{font-size:28px;letter-spacing:-.045em;margin:0 0 8px}.package .sub{color:var(--soft);font-weight:720;line-height:1.45;margin-bottom:18px}.package p{color:var(--muted);line-height:1.6}.result{margin-top:20px;border-top:1px solid var(--line);padding-top:18px;color:#fff}.result span{display:block;color:var(--cyan);font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
     .together{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}.flow{padding:30px}.flow-row{display:flex;gap:12px;align-items:center;margin:14px 0}.flow-badge{min-width:105px;text-align:center;border:1px solid var(--line);border-radius:999px;padding:11px 12px;background:rgba(255,255,255,.04);font-family:var(--mono);font-size:12px}.arrow{color:var(--muted)}
+    .before-after{display:grid;grid-template-columns:1fr 1fr;gap:18px}.ba{padding:30px}.ba h3{font-size:26px;letter-spacing:-.04em;margin:0 0 16px}.ba ul{list-style:none;margin:0;padding:0}.ba li{display:flex;gap:10px;color:var(--soft);line-height:1.48;margin:13px 0}.ba .x{color:#ff6c8d}.ba .check{color:#54d89a}.trust-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.trust-card{padding:30px}.stat-line{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.stat{border:1px solid var(--line);border-radius:20px;padding:18px;background:rgba(255,255,255,.035)}.stat b{display:block;font-size:30px;letter-spacing:-.05em}.stat span{display:block;color:var(--muted);font-size:13px;line-height:1.35;margin-top:4px}
     .cta{margin:60px 0 34px;padding:58px;border-radius:36px;border:1px solid var(--line);background:radial-gradient(circle at 82% 18%,rgba(47,111,240,.36),transparent 34%),radial-gradient(circle at 12% 72%,rgba(220,36,76,.27),transparent 34%),var(--panel)}.cta p{max-width:650px;color:var(--muted);font-size:19px;line-height:1.6}.footer{padding:34px 0 70px;color:var(--muted);border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px}
-    @media(max-width:980px){.links{display:none}.hero,.problem,.together{grid-template-columns:1fr}.features,.work-grid,.steps,.packages{grid-template-columns:1fr 1fr}.hero{padding-top:72px}.terminal{order:-1}.section-head{display:block}.section-head .lead{margin-top:16px}}
-    @media(max-width:640px){.wrap{width:min(100% - 28px,var(--max))}.nav-inner{height:68px;gap:12px}.brand{font-size:15px}.brand small,.nav-cta .btn:not(.primary){display:none}.nav-cta{min-width:0}.nav-cta .primary{font-size:0;min-height:42px;padding:0 15px;white-space:nowrap}.nav-cta .primary:after{content:"Termin";font-size:13px}.hero h1{font-size:clamp(42px,12.2vw,47px);letter-spacing:-.055em}.hero p{font-size:18px}.hero{gap:34px;padding-bottom:58px}.features,.work-grid,.steps,.packages{grid-template-columns:1fr}.section{padding:66px 0}.problem .panel,.card,.work,.step,.package{padding:22px}.cta{padding:34px 24px}.dash{grid-template-columns:1fr}.screen-body{font-size:12px;padding:18px}.flow-row{align-items:flex-start;flex-direction:column}.arrow{display:none}}
+    @media(max-width:980px){.links{display:none}.hero,.problem,.together{grid-template-columns:1fr}.features,.work-grid,.steps,.packages{grid-template-columns:1fr 1fr}.hero{padding-top:72px}.terminal{order:0}.section-head{display:block}.section-head .lead{margin-top:16px}}
+    @media(max-width:640px){.metric-row,.before-after,.trust-grid,.stat-line{grid-template-columns:1fr}.terminal:before{inset:0}.wrap{width:min(100% - 28px,var(--max))}.nav-inner{height:68px;gap:12px}.brand{font-size:15px}.brand small,.nav-cta .btn:not(.primary){display:none}.nav-cta{min-width:0}.nav-cta .primary{font-size:0;min-height:42px;padding:0 15px;white-space:nowrap}.nav-cta .primary:after{content:"Termin";font-size:13px}.hero h1{font-size:clamp(42px,12.2vw,47px);letter-spacing:-.055em}.hero p{font-size:18px}.hero{gap:34px;padding-bottom:58px}.features,.work-grid,.steps,.packages{grid-template-columns:1fr}.section{padding:66px 0}.problem .panel,.card,.work,.step,.package{padding:22px}.cta{padding:34px 24px}.dash{grid-template-columns:1fr}.screen-body{font-size:12px;padding:18px}.flow-row{align-items:flex-start;flex-direction:column}.arrow{display:none}}
   </style>
 </head>
 <body>
@@ -58,30 +61,52 @@
   <main id="main" class="wrap">
     <section class="hero" aria-labelledby="hero-title">
       <div>
-        <div class="eyebrow">AI operativni sistem za podjetja</div>
-        <h1 id="hero-title"><span class="grad">aiOS avtopilot</span> je trajen delovni sloj nad vašim podjetjem.</h1>
-        <p>Eno okolje namesto desetih aplikacij. Avtopilot, ki ne le odgovarja, ampak klika, piše in opravlja delo, ki bi ga sicer naredil človek.</p>
-        <div class="actions"><a class="btn primary" href="#cta">Rezerviraj 20-min diagnostični klic</a><a class="btn" href="#razlika">Poglej, kako deluje</a></div>
-        <div class="proof"><span class="pill">Lokalni podatki</span><span class="pill">LLM API obdelava</span><span class="pill">Človek v nadzoru</span></div>
+        <div class="eyebrow">Za direktorje in ekipe 5–50 ljudi</div>
+        <h1 id="hero-title"><span class="grad">AI avtopilot</span>, ki prevzame prodajo, administracijo in poročila.</h1>
+        <p>aiOS deluje nad vašimi obstoječimi orodji. Piše, klika, pripravlja ponudbe, pošilja follow-upe in opozori človeka samo pri občutljivih korakih.</p>
+        <div class="icp">Za podjetja, ki izgubljajo ure v <span>CRM-ju, mailih, ponudbah, vsebinah in poročilih</span>.</div>
+        <div class="actions"><a class="btn primary" href="#cta">Rezerviraj 20-min diagnostični klic</a><a class="btn" href="#dela">Kaj lahko prevzame?</a></div>
+        <div class="proof"><span class="pill">15–20h/teden manj administracije</span><span class="pill">30-dnevni implementacijski načrt</span><span class="pill">Človek potrdi občutljive korake</span></div>
       </div>
       <aside class="terminal" aria-label="Vizualni prikaz aiOS avtopilota">
         <div class="screen">
           <div class="screen-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
           <div class="screen-body">
-            <span class="mut">// jutranji pregled direktorja</span><br>
-            <span class="cmd">aios.run</span>({<br>
-            &nbsp;&nbsp;crm: <span class="ok">"preglej pipeline"</span>,<br>
-            &nbsp;&nbsp;mail: <span class="ok">"odgovori strankam"</span>,<br>
-            &nbsp;&nbsp;apollo: <span class="ok">"pošlji follow-upe"</span>,<br>
-            &nbsp;&nbsp;projects: <span class="warn">"opozori na zamike"</span><br>
-            })<br><br>
-            <span class="cmd">status</span>: 24 nalog izvedenih, 3 čakajo potrditev
-            <div class="dash"><div class="mini"><b>15–20h</b><span>tedensko nazaj prodajalcu</span></div><div class="mini"><b>5 min</b><span>za jutranji pregled podjetja</span></div></div>
-          </div>
+            <div class="ceo-dashboard">
+              <div class="dash-head"><div class="dash-title">Jutranji pregled podjetja</div><div class="dash-date">danes · 08:15</div></div>
+              <div class="metric-row">
+                <div class="metric"><b>24</b><span>nalog izvedenih</span></div>
+                <div class="metric"><b>7</b><span>follow-upov poslanih</span></div>
+                <div class="metric"><b>3</b><span>čakajo potrditev</span></div>
+              </div>
+              <div class="task"><span class="task-dot"></span><div><strong>Ponudbe pripravljene</strong><p>3 osnutki iz vaših preteklih vzorcev, pripravljeni za pregled.</p></div></div>
+              <div class="task"><span class="task-dot"></span><div><strong>CRM in Apollo posodobljena</strong><p>Novi leadi označeni, follow-upi napisani in razporejeni.</p></div></div>
+              <div class="task approval"><span class="task-dot"></span><div><strong>Potrebna odločitev direktorja</strong><p>2 zamika na projektih in 1 večja pogodba čakajo na vašo potrditev.</p></div></div>
+            </div></div>
         </div>
       </aside>
     </section>
 
+    <section id="dela" aria-labelledby="dela-title">
+      <div class="section-head"><div><div class="eyebrow">Kaj že dela v slovenskih podjetjih</div><h2 id="dela-title">En avtopilot, več operativnih funkcij.</h2></div><p class="lead">Od prodaje in podpore do vsebin, pogodb in dnevnih poročil direktorju.</p></div>
+      <div class="work-grid">
+        <article class="panel work"><h3>Prodaja in stranke</h3><ul><li>Priprava ponudb iz preteklih vzorcev</li><li>Podpora strankam iz lastnega e-maila</li><li>Avtonomne outreach kampanje prek Apolla</li></ul></article>
+        <article class="panel work"><h3>Marketing in vsebine</h3><ul><li>Kreative za družbena omrežja</li><li>Dnevne objave na X, Meta, Instagram, LinkedIn in TikTok</li><li>Izdelava in gostovanje strani v 10 minutah</li></ul></article>
+        <article class="panel work"><h3>Pravo in administracija</h3><ul><li>Priprava pogodb iz preteklih vzorcev</li><li>Pregled spornih mest</li><li>Standardni administrativni odgovori</li></ul></article>
+        <article class="panel work"><h3>Vodstvo in nadzor</h3><ul><li>Dnevna poročila iz CRM in ERP</li><li>Pregledi projektov, nalog, mailov in financ</li><li>Opozorila na zamike in anomalije</li></ul></article>
+      </div>
+      <div class="panel one"><strong>Vse zgornje opravlja en sam avtopilot.</strong></div>
+    </section>
+
+
+
+    <section aria-labelledby="before-after-title">
+      <div class="section-head"><div><div class="eyebrow">Before / After</div><h2 id="before-after-title">Manj odpiranja aplikacij. Več zaključenega dela.</h2></div><p class="lead">Največja razlika ni v tem, da imate “AI chat”. Razlika je, da se vsak dan več dela zgodi brez ročnega prepisovanja, iskanja in opominjanja.</p></div>
+      <div class="before-after">
+        <article class="panel ba"><h3>Pred avtopilotom</h3><ul><li><span class="x">✕</span><span>10 aplikacij, 10 inboxov in nobenega skupnega pregleda.</span></li><li><span class="x">✕</span><span>Follow-upi, ponudbe in CRM zapisi čakajo na človeka.</span></li><li><span class="x">✕</span><span>Direktor izve za zamik šele na sestanku ali v mailu.</span></li></ul></article>
+        <article class="panel ba"><h3>Po uvedbi aiOS</h3><ul><li><span class="check">✓</span><span>En pregled nad prodajo, projekti, maili, vsebinami in financami.</span></li><li><span class="check">✓</span><span>Avtopilot pripravi, klikne, pošlje ali prosi za potrditev.</span></li><li><span class="check">✓</span><span>Vodstvo vidi pomembne zamike, priložnosti in odločitve takoj.</span></li></ul></article>
+      </div>
+    </section>
     <section id="problem" aria-labelledby="problem-title">
       <div class="problem">
         <div class="panel"><div class="eyebrow">Problem, ki ga rešujemo</div><h2 id="problem-title" class="quote">Klasični AI chatboti v prodajnem pogovoru zvenijo dobro. V vsakdanjem poslovanju pa redko prinesejo merljiv učinek.</h2></div>
@@ -99,17 +124,6 @@
       </div>
     </section>
 
-    <section id="dela" aria-labelledby="dela-title">
-      <div class="section-head"><div><div class="eyebrow">Kaj že dela v slovenskih podjetjih</div><h2 id="dela-title">En avtopilot, več operativnih funkcij.</h2></div><p class="lead">Od prodaje in podpore do vsebin, pogodb in dnevnih poročil direktorju.</p></div>
-      <div class="work-grid">
-        <article class="panel work"><h3>Prodaja in stranke</h3><ul><li>Priprava ponudb iz preteklih vzorcev</li><li>Podpora strankam iz lastnega e-maila</li><li>Avtonomne outreach kampanje prek Apolla</li></ul></article>
-        <article class="panel work"><h3>Marketing in vsebine</h3><ul><li>Kreative za družbena omrežja</li><li>Dnevne objave na X, Meta, Instagram, LinkedIn in TikTok</li><li>Izdelava in gostovanje strani v 10 minutah</li></ul></article>
-        <article class="panel work"><h3>Pravo in administracija</h3><ul><li>Priprava pogodb iz preteklih vzorcev</li><li>Pregled spornih mest</li><li>Standardni administrativni odgovori</li></ul></article>
-        <article class="panel work"><h3>Vodstvo in nadzor</h3><ul><li>Dnevna poročila iz CRM in ERP</li><li>Pregledi projektov, nalog, mailov in financ</li><li>Opozorila na zamike in anomalije</li></ul></article>
-      </div>
-      <div class="panel one"><strong>Vse zgornje opravlja en sam avtopilot.</strong></div>
-    </section>
-
     <section aria-labelledby="priprava-title">
       <div class="section-head"><div><div class="eyebrow">Kako pripravimo podjetje na avtopilota</div><h2 id="priprava-title">Najprej izberemo delo, kjer AI prinese realen učinek.</h2></div><p class="lead">Ne iščemo magične 100 % avtomatizacije. Iščemo delež procesa, ki ga sistem lahko prevzame varno, merljivo in dovolj hitro.</p></div>
       <div class="steps">
@@ -122,7 +136,7 @@
     <section id="paketi" aria-labelledby="paketi-title">
       <div class="section-head"><div><div class="eyebrow">Paketi</div><h2 id="paketi-title">Začnemo z diagnostiko. Nato dodamo funkcionalne avtopilote.</h2></div><p class="lead">Vsi paketi tečejo na istem aiOS avtopilotu, zato podatki in znanje med njimi prosto krožijo.</p></div>
       <div class="packages">
-        <article class="panel package featured"><span class="tag">Vstopna točka</span><h3>Diagnostični pregled</h3><div class="sub">Pred vsako implementacijo.</div><p>V dveh tednih popišemo vaše procese, identificiramo, kje avtopilot prinese največ vrednosti, in pripravimo načrt za prvih 30 dni. Brez diagnostike se vsaka AI implementacija začne na napačnem koncu.</p><div class="result"><span>Rezultat</span>Jasno veste, kateri paket se vam najbolj splača in v kakšnem vrstnem redu.</div></article>
+        <article class="panel package featured"><span class="tag">Vstopna točka</span><h3>Diagnostični pregled</h3><div class="sub">Pred vsako implementacijo.</div><p>V dveh tednih popišemo vaše procese, identificiramo, kje avtopilot prinese največ vrednosti, in pripravimo načrt za prvih 30 dni. Brez diagnostike se vsaka AI implementacija začne na napačnem koncu.</p><ul><li>Zemljevid procesov</li><li>Prioriteta avtomatizacij</li><li>30-dnevni implementacijski načrt</li><li>Odločitev: go / no-go</li></ul><div class="result"><span>Rezultat</span>Jasno veste, kateri paket se vam najbolj splača in v kakšnem vrstnem redu.</div></article>
         <article class="panel package"><span class="tag">Sales</span><h3>Sales Autopilot</h3><div class="sub">Prevzame cikel od prvega kontakta do podpisa pogodbe.</div><ul><li>Pripravlja ponudbe na podlagi vaših vzorcev</li><li>Vodi outreach kampanje prek Apolla</li><li>Odgovarja strankam iz lastnega e-maila</li><li>Posodablja CRM po vsakem kontaktu</li></ul><p><strong>Za koga:</strong> prodajne ekipe 1 do 5 ljudi, kjer prodajalci preveč časa porabijo za administracijo.</p><div class="result"><span>Tipičen rezultat</span>15 do 20 ur tedensko nazaj za delo s kvalificiranimi leadi.</div></article>
         <article class="panel package"><span class="tag">Content</span><h3>Content Autopilot</h3><div class="sub">Prevzame produkcijo vsebin za družbena omrežja in spletne strani.</div><ul><li>Pripravlja kreative za družbena omrežja</li><li>Dnevno objavlja na petih platformah</li><li>Izdeluje in gosti spletne strani v 10 minutah</li><li>Spremlja performance in optimizira vsebine</li></ul><p><strong>Za koga:</strong> podjetja brez časa ali kadrov za stalno prisotnost in agencije, ki želijo skalirati produkcijo.</p><div class="result"><span>Tipičen rezultat</span>Stalna prisotnost brez najema content kreatorja.</div></article>
         <article class="panel package"><span class="tag">Legal & Admin</span><h3>Legal & Admin Autopilot</h3><div class="sub">Pripravlja pogodbe, dokumente in administrativne odgovore.</div><ul><li>Pripravlja pogodbe iz preteklih vzorcev</li><li>Pregleduje prejete pogodbe</li><li>Pripravlja standardne odgovore</li><li>Vzdržuje strukturiran arhiv dokumentov</li></ul><p><strong>Za koga:</strong> podjetja z redno dinamiko pogodb, B2B prodaja, agencije, najemodajalci, konzultantske hiše in odvetniške pisarne.</p><div class="result"><span>Tipičen rezultat</span>Priprava nove pogodbe iz 2 ur na 10 minut.</div></article>
@@ -137,8 +151,15 @@
       </div>
     </section>
 
+
+    <section aria-labelledby="proof-title">
+      <div class="trust-grid">
+        <article class="panel trust-card"><div class="eyebrow">Zakaj je to varnejši začetek</div><h2 id="proof-title" style="font-size:clamp(34px,4vw,54px);letter-spacing:-.055em;line-height:1.02;margin:0 0 18px">Najprej diagnostika, potem implementacija.</h2><p class="lead">Ne prodajamo “AI za vse”. V dveh tednih najprej ugotovimo, kateri procesi imajo dovolj vrednosti, dovolj podatkov in dovolj nizek riziko za avtomatizacijo.</p></article>
+        <article class="panel trust-card"><div class="eyebrow">Tipični prvi rezultati</div><div class="stat-line"><div class="stat"><b>2 tedna</b><span>za zemljevid procesov</span></div><div class="stat"><b>30 dni</b><span>za prvi izvedbeni načrt</span></div><div class="stat"><b>go / no-go</b><span>jasna odločitev pred investicijo</span></div></div></article>
+      </div>
+    </section>
     <section id="cta" class="cta" aria-labelledby="cta-title">
-      <div class="eyebrow">Začetek sodelovanja</div><h2 id="cta-title">Sodelovanje začnemo s kratkim klicem in aiOS diagnostičnim pregledom.</h2><p>Na klicu preverimo, kje bi avtopilot najhitreje prinesel merljiv učinek in ali je vaše podjetje pravi kandidat za implementacijo.</p><div class="actions"><a class="btn primary" href="mailto:matic@chattrips.si?subject=Rezervacija%20aiOS%20diagnosti%C4%8Dnega%20pregleda">Rezerviraj 20-min diagnostični klic</a><a class="btn" href="#paketi">Preglej pakete</a></div>
+      <div class="eyebrow">Začetek sodelovanja</div><h2 id="cta-title">Sodelovanje začnemo s kratkim klicem in aiOS diagnostičnim pregledom.</h2><p>Na klicu preverimo, kje bi avtopilot najhitreje prinesel merljiv učinek in ali je vaše podjetje pravi kandidat za implementacijo.</p><div class="actions"><a class="btn primary" href="mailto:matic@chattrips.si?subject=Rezervacija%20aiOS%20diagnosti%C4%8Dnega%20pregleda">Začni z diagnostiko</a><a class="btn" href="#paketi">Preglej pakete</a></div>
     </section>
   </main>
   <footer class="wrap footer"><span>ChatTrips d.o.o. · AI avtomatizacije in avtopiloti za podjetja</span><span>www.chattrips.si</span></footer>
